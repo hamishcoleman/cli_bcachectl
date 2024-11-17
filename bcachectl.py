@@ -355,7 +355,7 @@ class Bcache:
         return objects
 
 
-def _internal_tests():
+def test_internal():
     import doctest
     doctest.testmod()
 
@@ -363,7 +363,7 @@ def _internal_tests():
 def main():
     args = argparser()
     if args.internal_tests:
-        return _internal_tests()
+        return test_internal()
 
     objects = Bcache.find()
     parents = []
