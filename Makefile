@@ -1,6 +1,7 @@
 
 # Just the packages needed to run lint and test
 PACKAGES+=flake8
+PACKAGES+=python3-pytest
 
 PYTHON=$(wildcard *.py)
 
